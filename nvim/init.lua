@@ -5,7 +5,8 @@ local opt = vim.o
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
 -- The default leader is '\'. Some people prefer <space>. Uncomment this if you do, too.
--- vim.g.mapleader = ' '
+vim.g.mapleader = ' '
+-- Karesz: only take effect for certain types of files, like Python or HTML ...
 -- vim.g.maplocalleader = ' '
 
 -- See :h <option> to see what the options do
@@ -15,11 +16,11 @@ opt.path = vim.o.path .. '**'
 
 opt.number = true
 opt.relativenumber = true
-opt.cursorline = true
+opt.cursorline = true -- Highlight current line
 opt.lazyredraw = true
 opt.showmatch = true -- Highlight matching parentheses, etc
-opt.incsearch = true
-opt.hlsearch = true
+opt.incsearch = true -- show current matching while searching with '/'
+opt.hlsearch = true -- all matches for the last used search pattern is highlighted
 
 opt.spell = true
 opt.spelllang = 'en'
@@ -37,7 +38,7 @@ opt.splitbelow = true
 opt.cmdheight = 0
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-opt.colorcolumn = '100'
+opt.colorcolumn = '120'
 
 -- Configure Neovim diagnostic messages
 
