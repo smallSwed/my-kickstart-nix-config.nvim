@@ -115,7 +115,7 @@ to start a repo based on this template. **Do _not_ fork it**.
 
 ### :snowflake: NixOS (with flakes)
 
-1. Add your flake to you NixOS flake inputs.
+1. Add your flake to your NixOS flake inputs.
 1. Add the overlay provided by this flake.
 
 ```nix
@@ -204,7 +204,7 @@ There are two ways to add plugins:
 
 - The traditional way, using `nixpkgs` as the source.
 - By adding plugins as flake inputs (if you like living on the bleeding-edge).
-  Plugins added as flake inputs must be built in `nix/plugin-overlay.nix`.
+  Plugins added as flake inputs must be built manually.
 
 Directory structure:
 
